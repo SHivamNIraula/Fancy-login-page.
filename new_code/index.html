@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stylized Planet 3D Viewer with Stars</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="loading">
+        <div class="spinner"></div>
+        <p>Loading 3D Planet Model...</p>
+      </div>
+
+      <div id="info">
+        <h1>Stylized Planet</h1>
+        <p><strong>Model:</strong> 3D Animated Planet</p>
+        <p><strong>Features:</strong> Rotating planet with cloud layer</p>
+        <p><strong>Vertices:</strong> ~33,000</p>
+        <p><strong>Animation:</strong> Automatic rotation</p>
+        <div class="credit">
+          <p><strong>Credit:</strong></p>
+          <p>
+            This work is based on "Stylized planet" by cmzw licensed under
+            CC-BY-4.0
+          </p>
+          <p>
+            Source:
+            <a
+              href="https://sketchfab.com/3d-models/stylized-planet-789725db86f547fc9163b00f302c3e70"
+              target="_blank"
+              style="color: #4a9eff"
+              >Sketchfab</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div id="controls">
+        <h3>Controls</h3>
+        <p>🖱️ Left Click + Drag: Rotate view</p>
+        <p>🖱️ Right Click + Drag: Pan</p>
+        <p>🖱️ Scroll: Zoom in/out</p>
+        <p>📱 Touch: Drag to rotate, pinch to zoom</p>
+      </div>
+
+      <div id="canvas-container"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
